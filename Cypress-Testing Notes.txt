@@ -1,0 +1,75 @@
+Cypress-Testing Introduction
+
+Frontend web automation testing tool. It is specially designed for testing Modern web applications.
+And can automate any application that runs on a browser. 
+
+
+Q. What is a modern web application.? 
+ Web Applications designed using React JS, and Angular JS.
+
+Programming Language used for Testing: Javascript, Typescript
+Build on: Node.js Environment
+Browser Support: Chrome, Edge, Firefox & Electron
+Framework: Mocha JS
+
+It doesn’t use any selenium libraries 
+It’s an Open Source. And had multiple components
+Cypress Test Runner (Free tool)
+Cypress Dashboard (Paid tool)
+
+Cypress Dashboard Features
+
+Test history, parallel testing, test results
+
+Who can use Cypress? ->  Dev & QA
+
+What can we do using Cypress?
+End-to-end test cases
+Component tests
+Integration Testing
+Unit test cases 
+API Testing
+
+Cypress Eco System
+TestRunner  — open source, locally installed
+Dashboard   — Paid 
+
+Features: 
+Time travel
+Debuggability
+Automatic wait / Built-in wait 
+Consistent results
+Screenshot & videos
+Cross-browser testing
+
+
+Limitations: 
+Can’t Automate window-based/ mobile applications
+Limited support of browsers
+Java Script/Typescript
+reading/writing data into the file is difficult.
+3p reporting tool integration is also limited.
+
+Official documentation link: https://www.cypress.io/
+
+To open Cypress Runner
+ npx cypress open
+
+To Run All the specs under e2e folder
+ npx cypress run
+ npx cypress run --headed
+
+To Run Single spec under e2e folder
+ npx cypress run –-spec cypress\e2e\MyTest.js"
+
+
+To Run All the specs under e2e folder using Chrome
+ npx cypress run --browser chrome
+ npx cypress run --browser edge
+
+ npx cypress run --browser edge --headed
+
+
+ testSuite ---> Testcase ---> Test steps
+
+ spec File(cy.js)  ---> describe blocks (test suite) ---> it block( test)
